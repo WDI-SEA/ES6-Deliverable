@@ -22,3 +22,10 @@ const myObjects = [
 console.log(detectCollision(myObjects, {x: 4, y: 2}))
 
 // source: http://marijnhaverbeke.nl/talks/es6_falsyvalues2015/exercises/#Improve_this_code
+
+function detectCollision2(objects, point) {
+  return objects.find(object => (point.x >= object.x && point.x <= object.x + object.width &&
+        point.y >= object.y && point.y <= object.y + object.height));
+}
+
+console.log(detectCollision2(myObjects, {x: 4, y: 2}));
