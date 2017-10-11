@@ -13,6 +13,12 @@ function detectCollision(objects, point) {
   }
 }
 
+//solution
+function detectCollision2(objects, point) {
+	return objects.find(object => (point.x >= object.x && point.x <= object.x + object.width &&
+		point.y >= object.y && point.y <= object.y + object.height));
+}
+
 const myObjects = [
   {x:  10, y: 20, width: 30, height: 30},
   {x: -40, y: 20, width: 30, height: 30},
