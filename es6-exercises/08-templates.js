@@ -11,7 +11,10 @@ const people = [{name: "Jennie", role: "senior"},
                 {name: "Martin", role: "senior"},
                 {name: "Anneli", role: "junior"}]
 
-let message = YOUR CODE HERE
+const [a,b,c,d] = people
+
+let message = `There are ${people.length} people on the ${teamName} team.
+Their names are ${a.name}.`
 
 console.log(message)
 

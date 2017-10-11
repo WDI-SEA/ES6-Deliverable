@@ -3,7 +3,7 @@
 // logs "vroom" to the console
 
 function car(make, model, options){
-  return // your code here
+  return {make, model, drive() {console.log('vroom')}}
 }
 
 let auto = car("honda","civic")
