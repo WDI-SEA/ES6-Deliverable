@@ -5,7 +5,7 @@ var myRide = {
   model: "Model T",
   year: 1959,
   location: "the Office",
-  driveTo: function ( place ) {
+  driveTo: function ( place="home" ) {
     this.location = place || "Home"
   }
 }
@@ -16,4 +16,5 @@ myRide.location // "Walmart"
 // vs...
 
 myRide.driveTo()
-myRide.location // "Home"
+myRide.location // "Home
+
