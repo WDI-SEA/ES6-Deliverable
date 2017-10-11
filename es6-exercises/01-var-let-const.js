@@ -11,11 +11,14 @@
 
 "use strict"
 
-var callbacks = []
-for (var i = 0; i < 10; i++) {
+let callbacks = []
+for (let i = 0; i < 10; i++) {
+
   callbacks.push(function() { console.log(i) })
+
 }
 
-callbacks[2]()
+console.log(callbacks);
+callbacks[2]();
 
 // Source: http://marijnhaverbeke.nl/talks/es6_falsyvalues2015/exercises/#Closing_over_scope

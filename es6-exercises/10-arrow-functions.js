@@ -10,8 +10,12 @@ const inventory = [
   {type:   "machine", value:   77}
 ]
 
-let totalMachineValue = YOUR CODE HERE
+var invIt = inventory[Symbol.iterator]();
+let totalMachineValue = 0;
+for (let inst of invIt) {
+   totalMachineValue +=inst.value;
+}
 
-console.log(totalMachineValue)
+console.log(totalMachineValue);
 
 // source: http://marijnhaverbeke.nl/talks/es6_falsyvalues2015/exercises/#Accounting
