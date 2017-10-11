@@ -1,11 +1,13 @@
 // Convert the driveTo method below to use ES6 default parameters.
 
+//WORKING
+
 var myRide = {
   make: "Ford",
   model: "Model T",
   year: 1959,
   location: "the Office",
-  driveTo: function ( place ) {
+  driveTo: function ( place="Home" ) {
     this.location = place || "Home"
   }
 }

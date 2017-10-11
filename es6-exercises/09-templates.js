@@ -8,8 +8,8 @@
 // Remember that a tag function gets an array of in-between strings as its first
 // argument, and then the interpolated values as further arguments.
 
-function html(...) {
-  // Your code here
+function html(...values) {
+     return values.join();
 }
 
 const mustEscape = '<>&"'
