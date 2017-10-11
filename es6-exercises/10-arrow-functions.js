@@ -10,7 +10,7 @@ const inventory = [
   {type:   "machine", value:   77}
 ]
 
-let totalMachineValue = YOUR CODE HERE
+let totalMachineValue =
 
 console.log(totalMachineValue)
 
