@@ -5,10 +5,10 @@
 // can't.  Hint: the thing to google is object freeze
 
 const account = {
-  username: "marijn",
-  password: "xyzzy"
+    username: "marijn",
+    password: "xyzzy"
 }
-
+Object.freeze(account);
 account.password = "s3cret"
 
 console.log(account.password)
