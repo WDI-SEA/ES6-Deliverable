@@ -4,10 +4,10 @@
 // If it turns out we *can* change the password, try to make it so that we
 // can't.  Hint: the thing to google is object freeze
 
-const account = {
+const account = Object.freeze({
   username: "marijn",
   password: "xyzzy"
-}
+});
 
 account.password = "s3cret"
 
