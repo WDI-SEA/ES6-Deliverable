@@ -6,12 +6,20 @@
 
 function detectCollision(objects, point) {
   for (let i = 0; i < objects.length; i++) {
-    let object = objects[i]
-    if (point.x >= object.x && point.x <= object.x + object.width &&
-        point.y >= object.y && point.y <= object.y + object.height)
+    let object = objects[i];
+    
+    // var o = object; 
+    var {x: ox, y: oy, width:ow, height: oh} = object; 
+    
+    // var p = point; 
+    var {x:px, y:py} = point; 
+    
+    if (px >= ox && px <= oh + ow &&
+        py >= oy && py <= oy + oh){
       return object
-  }
-}
+    } 
+  } 
+} 
 
 const myObjects = [
   {x:  10, y: 20, width: 30, height: 30},
@@ -20,5 +28,5 @@ const myObjects = [
 ]
 
 console.log(detectCollision(myObjects, {x: 4, y: 2}))
-
+ 
 // source: http://marijnhaverbeke.nl/talks/es6_falsyvalues2015/exercises/#Improve_this_code
