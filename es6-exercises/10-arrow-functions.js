@@ -10,7 +10,7 @@ const inventory = [
   {type:   "machine", value:   77}
 ]
 
-let totalMachineValue = YOUR CODE HERE
+let totalMachineValue = inventory.reduce((prevVal, elem) => prevVal + elem.value, 0);
 
 console.log(totalMachineValue)
 
