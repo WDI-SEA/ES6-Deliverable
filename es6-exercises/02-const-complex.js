@@ -6,7 +6,8 @@
 
 const account = {
   username: "marijn",
-  password: "xyzzy"
+  password: "xyzzy",
+  object.freeze(password)
 }
 
 account.password = "s3cret"

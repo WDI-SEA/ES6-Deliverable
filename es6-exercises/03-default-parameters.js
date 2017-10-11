@@ -1,6 +1,6 @@
 // Convert the driveTo method below to use ES6 default parameters.
 
-var myRide = {
+let myRide = {
   make: "Ford",
   model: "Model T",
   year: 1959,
