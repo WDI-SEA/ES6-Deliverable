@@ -6,7 +6,7 @@ This is the deliverable for the intro to ES6 lesson
 - Go into each file in the exercises folder and solve the problem that is given. Look at your code along and google your little hearts out. 
 - Use an online REPL or run each file in your command line using node.
 - once you've solved them all do a pull request.
-
+// var and let for problem #1
 ## Additional resources
 
 - [ES6](http://webapplog.com/es6/)

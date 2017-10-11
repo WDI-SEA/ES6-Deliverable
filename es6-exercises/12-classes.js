@@ -7,6 +7,12 @@
 
 // Your code here
 console.log(new Point(1, 2).plus(new Point(2, 1)))
+class Point {
+	constructor(x,y){
+		this.x = x;
+		this.y = y;
+	}
+}
 // → Point{x: 3, y: 3}
 
 
