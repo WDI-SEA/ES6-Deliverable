@@ -15,3 +15,26 @@ let totalMachineValue = YOUR CODE HERE
 console.log(totalMachineValue)
 
 // source: http://marijnhaverbeke.nl/talks/es6_falsyvalues2015/exercises/#Accounting
+
+/*
+//REGULAR FUNCTION
+ function funcName (param1, param2) {
+	
+}
+
+//ARROW FUNCTION
+var funcName = (param1, param2) => {
+	
+}
+
+or if one parameter:
+
+var funcName = param1 => {
+	
+}
+
+Arrow function does not bind "this", which is useful in
+the context of function.
+
+*/
+
