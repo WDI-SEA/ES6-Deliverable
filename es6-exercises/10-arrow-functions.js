@@ -27,8 +27,14 @@ var funcName = (param1, param2) => {
 	
 }
 
+or if one parameter:
+
+var funcName = param1 => {
+	
+}
+
 Arrow function does not bind "this", which is useful in
-the context of function
+the context of function.
 
 */
 
