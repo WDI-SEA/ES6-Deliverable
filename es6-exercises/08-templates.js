@@ -11,8 +11,9 @@ const people = [{name: "Jennie", role: "senior"},
                 {name: "Martin", role: "senior"},
                 {name: "Anneli", role: "junior"}]
 
-let message = YOUR CODE HERE
+let message = `there are ${people.length} people on the tooling team.
+              Their names are ${people.map(person => `${person.name}`)}.`;
 
-console.log(message)
+console.log(message);
 
 // source: http://marijnhaverbeke.nl/talks/es6_falsyvalues2015/exercises/#The_tooling_team

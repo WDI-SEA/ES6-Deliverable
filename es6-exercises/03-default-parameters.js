@@ -5,8 +5,8 @@ var myRide = {
   model: "Model T",
   year: 1959,
   location: "the Office",
-  driveTo: function ( place ) {
-    this.location = place || "Home"
+  driveTo( place = "Home" ) {
+    this.location = place;
   }
 }
 
